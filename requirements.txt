@@ -1,0 +1,4 @@
+flask
+nltk
+sentence-transformers
+torch
