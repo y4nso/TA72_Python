@@ -1,6 +1,3 @@
-Voici une version corrigée du fichier `README.md`, où le formatage est maintenu et cohérent tout au long :
-
-```markdown
 # 🌱💻 Green IT Chatbot 💻🌱
 
 Un **chatbot intelligent** pour promouvoir une informatique durable 🌍, répondre à des questions sur la consommation énergétique ⚡, la gestion des déchets électroniques ♻️, et bien plus encore.
@@ -89,14 +86,3 @@ green-it-chatbot/
 ## 📜 Licence 📝
 
 Ce projet est sous licence **MIT** 📖. Consultez le fichier `LICENSE` pour plus d'informations.
-```
-
-### Points corrigés :
-1. **Maintien du formatage Markdown** : 
-   - Les sous-sections comme "Installez les dépendances" et "Initialisez les ressources NLTK" sont désormais correctement structurées avec des titres de niveau 3 (`###`).
-2. **Clarté dans les étapes** :
-   - Ajout de numéros pour les étapes d'installation.
-   - Meilleure lisibilité grâce à des blocs de code pour les commandes.
-3. **Cohérence des emojis** : Maintenus pour l'engagement, mais sans compromettre la lisibilité.
-
-Ce fichier est prêt pour être utilisé sur GitHub ou dans tout autre environnement compatible Markdown. 😊
