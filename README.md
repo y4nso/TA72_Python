@@ -148,5 +148,3 @@ Vous souhaitez contribuer ? Voici comment vous pouvez aider :
 ## 📝 **Licence**
 
 Ce projet est sous licence MIT. Voir le fichier [LICENSE](LICENSE) pour plus d'informations.
-```
-
