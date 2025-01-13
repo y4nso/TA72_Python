@@ -1,20 +1,22 @@
-# 🌱 Green IT Chatbot
+# 🌱 Green IT Chatbot 🌍
 
-Bienvenue sur **Green IT Chatbot** ! Ce projet est un chatbot interactif conçu pour discuter de sujets liés au Green IT. Que vous souhaitiez en savoir plus sur la sobriété numérique, la gestion des déchets électroniques ou d'autres thèmes similaires, ce chatbot est là pour répondre à vos questions.
+Bienvenue sur **Green IT Chatbot** ! Ce projet est un chatbot interactif conçu pour discuter des sujets liés au Green IT. 🌿 Posez vos questions sur la sobriété numérique, la gestion des déchets électroniques, ou d'autres thèmes similaires. Le chatbot est là pour vous répondre intelligemment !
 
 ---
 
 ## 📖 **Fonctionnalités principales**
 
-- **Interface utilisateur moderne :**
-  - Questions utilisateur alignées à droite (bulle bleue).
-  - Réponses IA alignées à gauche (bulle grise).
-- **Thèmes aléatoires :**
-  - Propose 5 sujets choisis au hasard parmi le corpus.
-  - Les suggestions changent dynamiquement lorsque vous cliquez sur un thème.
-- **Modèle NLP avancé :**
-  - Comprend les questions similaires même si elles ne sont pas identiques à celles du corpus.
-  - Utilise **Sentence Transformers** pour mesurer la similarité entre questions.
+✨ **Interface utilisateur moderne :**
+- Questions utilisateur alignées à droite (💬 bulle bleue).
+- Réponses IA alignées à gauche (🤖 bulle grise).
+
+🎯 **Thèmes aléatoires :**
+- Propose 5 sujets choisis au hasard parmi le corpus.
+- Les suggestions changent dynamiquement lorsque vous cliquez sur un thème.
+
+🧠 **Modèle NLP avancé :**
+- Comprend les questions similaires même si elles ne sont pas identiques à celles du corpus.
+- Utilise **Sentence Transformers** pour mesurer la similarité entre phrases.
 
 ---
 
@@ -22,8 +24,8 @@ Bienvenue sur **Green IT Chatbot** ! Ce projet est un chatbot interactif conçu 
 
 ### **1. Prérequis**
 
-- Python 3.8 ou plus récent
-- Pip pour gérer les dépendances
+- Python 3.8 ou plus récent 🐍
+- Pip pour gérer les dépendances 📦
 
 ### **2. Installation**
 
@@ -43,7 +45,7 @@ Bienvenue sur **Green IT Chatbot** ! Ce projet est un chatbot interactif conçu 
    python app.py
    ```
 
-4. Ouvrez un navigateur et accédez à [http://127.0.0.1:5000](http://127.0.0.1:5000).
+4. Ouvrez un navigateur 🌐 et accédez à [http://127.0.0.1:5000](http://127.0.0.1:5000).
 
 ---
 
@@ -75,15 +77,15 @@ green_it_chatbot/
 
 1. **Interface utilisateur :**
    - Tapez une question ou cliquez sur un thème proposé dans la colonne de gauche.
-   - Les messages utilisateur apparaissent en bleu à droite.
-   - Les réponses du chatbot sont affichées en gris à gauche.
+   - Les messages utilisateur apparaissent en 💬 bleu.
+   - Les réponses du chatbot sont affichées en 🤖 gris.
 
 2. **Suggestions dynamiques :**
    - 5 thèmes aléatoires sont proposés à chaque chargement.
    - Cliquez sur un thème pour poser une question liée et actualiser les suggestions.
 
 3. **Traitement des questions :**
-   - Le chatbot utilise ChatterBot pour répondre aux questions du corpus.
+   - Le chatbot utilise **ChatterBot** pour répondre aux questions du corpus.
    - Si aucune réponse claire n'est trouvée, un modèle NLP calcule la similarité pour fournir une réponse pertinente.
 
 ---
@@ -126,7 +128,7 @@ green_it_chatbot/
 ## 🤝 **Contribuer**
 
 Vous souhaitez contribuer ? Voici comment vous pouvez aider :
-1. Forkez le dépôt.
+1. Forkez le dépôt 🍴.
 2. Créez une branche pour vos modifications :
    ```bash
    git checkout -b ma-nouvelle-fonctionnalite
@@ -143,13 +145,20 @@ Vous souhaitez contribuer ? Voici comment vous pouvez aider :
 
 ---
 
-## 📧 **Contact**
-
-Pour toute question ou suggestion, vous pouvez me contacter à :  
-📩 **votre-email@example.com**
-
----
-
 ## 📝 **Licence**
 
 Ce projet est sous licence MIT. Voir le fichier [LICENSE](LICENSE) pour plus d'informations.
+```
+
+---
+
+### **Requirements.txt**
+
+```plaintext
+flask
+chatterbot==1.0.4
+nltk
+sentence-transformers
+torch
+```
+
