@@ -1,88 +1,155 @@
-# 🌱💻 Green IT Chatbot 💻🌱
+# 🌱 Green IT Chatbot
 
-Un **chatbot intelligent** pour promouvoir une informatique durable 🌍, répondre à des questions sur la consommation énergétique ⚡, la gestion des déchets électroniques ♻️, et bien plus encore.
-
----
-
-## 📋 Description 📝
-
-Ce projet utilise **Flask** 🐍 pour le backend et **Sentence Transformers** 🧠 pour analyser les questions des utilisateurs. La base de connaissances 🗂️ est stockée dans un fichier **JSON** facile à modifier, ce qui rend le projet simple à personnaliser.
+Bienvenue sur **Green IT Chatbot** ! Ce projet est un chatbot interactif conçu pour discuter de sujets liés au Green IT. Que vous souhaitiez en savoir plus sur la sobriété numérique, la gestion des déchets électroniques ou d'autres thèmes similaires, ce chatbot est là pour répondre à vos questions.
 
 ---
 
-## 🚀 Fonctionnalités ✨
+## 📖 **Fonctionnalités principales**
 
-- 🤖 **Réponses intelligentes** basées sur une base de connaissances thématique.
-- 🔍 **Analyse des questions** grâce à Sentence Transformers.
-- 🛠️ **Facilité de personnalisation** avec une base de connaissances en JSON.
-- 🌐 **Interface utilisateur web** simple et accessible.
-
----
-
-## 🛠️ Installation 🖥️
-
-### 1. Clonez le dépôt 🛒
-```bash
-git clone https://github.com/your-repo/green-it-chatbot.git
-cd green-it-chatbot
-```
-
-### 2. Installez les dépendances 📦
-Assurez-vous d'avoir **Python** 🐍 installé sur votre machine, puis exécutez :
-
-```bash
-pip install -r requirements.txt
-```
-
-### 3. Initialisez les ressources NLTK 🧩
-Certaines ressources NLTK doivent être téléchargées avant de lancer l'application. Utilisez ces commandes dans un terminal Python :
-```python
-import nltk
-nltk.download('punkt')
-nltk.download('wordnet')
-```
-
-### 4. Lancez l'application 🚦
-Exécutez la commande suivante pour démarrer le serveur Flask :
-```bash
-python app.py
-```
-
-### 5. Accédez au chatbot 🌟
-Ouvrez votre navigateur et visitez [http://127.0.0.1:5000](http://127.0.0.1:5000).
+- **Interface utilisateur moderne :**
+  - Questions utilisateur alignées à droite (bulle bleue).
+  - Réponses IA alignées à gauche (bulle grise).
+- **Thèmes aléatoires :**
+  - Propose 5 sujets choisis au hasard parmi le corpus.
+  - Les suggestions changent dynamiquement lorsque vous cliquez sur un thème.
+- **Modèle NLP avancé :**
+  - Comprend les questions similaires même si elles ne sont pas identiques à celles du corpus.
+  - Utilise **Sentence Transformers** pour mesurer la similarité entre questions.
 
 ---
 
-## 📂 Structure du projet 📁
+## 🚀 **Démarrage rapide**
+
+### **1. Prérequis**
+
+- Python 3.8 ou plus récent
+- Pip pour gérer les dépendances
+
+### **2. Installation**
+
+1. Clonez le dépôt :
+   ```bash
+   git clone https://github.com/votre-utilisateur/green-it-chatbot.git
+   cd green-it-chatbot
+   ```
+
+2. Installez les dépendances :
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+3. Lancez l'application :
+   ```bash
+   python app.py
+   ```
+
+4. Ouvrez un navigateur et accédez à [http://127.0.0.1:5000](http://127.0.0.1:5000).
+
+---
+
+## 🛠 **Structure du projet**
 
 ```
-green-it-chatbot/
-├── app.py               # Fichier principal Flask 🐍
-├── requirements.txt     # Liste des dépendances 📦
-├── knowledge_base.json  # Base de connaissances 🗂️
+green_it_chatbot/
+├── app.py               # Serveur Flask (backend)
+├── chatbot_logic.py     # Logique du chatbot
 ├── templates/
-│   └── index.html       # Interface utilisateur 🌐
+│   └── index.html       # Interface utilisateur
+├── static/
+│   ├── style.css        # Styles CSS
+│   └── script.js        # Logique JS pour les interactions
+├── green_it_corpus.json # Corpus de questions/réponses
+├── requirements.txt     # Dépendances Python
 ```
 
----
-
-## 👩‍💻 Utilisation 💬
-
-1. **Posez vos questions** sur des thèmes comme l'énergie ⚡, les déchets électroniques ♻️, ou l'équilibre numérique 🧘.
-2. **Recevez des réponses personnalisées** et pertinentes pour adopter des pratiques responsables.
-3. Explorez, apprenez et contribuez à un numérique plus durable ! 🌱
-
----
-
-## ✨ Améliorations possibles 🚀
-
-- 🎨 Ajout d'une interface utilisateur plus moderne.
-- 📈 Extension de la base de connaissances avec de nouveaux sujets.
-- ☁️ Hébergement en ligne via **Heroku**, **Render**, ou un serveur dédié.
-- 🧠 Intégration d'un modèle de langage avancé pour des réponses encore plus pertinentes.
+### **Descriptions :**
+- **app.py :** Définit les routes pour l'interface et le traitement des requêtes.
+- **chatbot_logic.py :** Gère le traitement des questions et l'entraînement du chatbot.
+- **index.html :** Interface utilisateur moderne avec suggestions dynamiques.
+- **style.css :** Définit le design des bulles de chat et des suggestions.
+- **script.js :** Gère les interactions utilisateur (envoi de messages, clics sur thèmes).
 
 ---
 
-## 📜 Licence 📝
+## ✨ **Fonctionnement**
 
-Ce projet est sous licence **MIT** 📖. Consultez le fichier `LICENSE` pour plus d'informations.
+1. **Interface utilisateur :**
+   - Tapez une question ou cliquez sur un thème proposé dans la colonne de gauche.
+   - Les messages utilisateur apparaissent en bleu à droite.
+   - Les réponses du chatbot sont affichées en gris à gauche.
+
+2. **Suggestions dynamiques :**
+   - 5 thèmes aléatoires sont proposés à chaque chargement.
+   - Cliquez sur un thème pour poser une question liée et actualiser les suggestions.
+
+3. **Traitement des questions :**
+   - Le chatbot utilise ChatterBot pour répondre aux questions du corpus.
+   - Si aucune réponse claire n'est trouvée, un modèle NLP calcule la similarité pour fournir une réponse pertinente.
+
+---
+
+## 📚 **Technologies utilisées**
+
+- **[Flask](https://flask.palletsprojects.com/)** : Framework web pour le backend.
+- **[ChatterBot](https://github.com/gunthercox/ChatterBot)** : Bibliothèque de chatbot basée sur le machine learning.
+- **[Sentence Transformers](https://www.sbert.net/)** : Modèle NLP pour mesurer la similarité entre phrases.
+- **HTML/CSS/JavaScript** : Interface utilisateur moderne et réactive.
+
+---
+
+## 🧩 **Personnalisation**
+
+### Ajouter de nouveaux thèmes :
+1. Ouvrez `green_it_corpus.json`.
+2. Ajoutez des paires question/réponse au format suivant :
+   ```json
+   {
+       "question": "Qu'est-ce que la sobriété numérique ?",
+       "answer": "La sobriété numérique consiste à réduire l'empreinte écologique du numérique."
+   }
+   ```
+
+3. Relancez le chatbot :
+   ```bash
+   python app.py
+   ```
+
+---
+
+## 🐛 **Problèmes connus**
+
+- **Taille du corpus limitée :** La compréhension du chatbot dépend fortement de la qualité et de la taille des données du corpus.
+- **ChatterBot 1.0.4 :** Cette version est utilisée pour éviter les problèmes de compatibilité.
+
+---
+
+## 🤝 **Contribuer**
+
+Vous souhaitez contribuer ? Voici comment vous pouvez aider :
+1. Forkez le dépôt.
+2. Créez une branche pour vos modifications :
+   ```bash
+   git checkout -b ma-nouvelle-fonctionnalite
+   ```
+3. Faites vos modifications et validez-les :
+   ```bash
+   git commit -m "Ajout d'une nouvelle fonctionnalité"
+   ```
+4. Envoyez vos modifications :
+   ```bash
+   git push origin ma-nouvelle-fonctionnalite
+   ```
+5. Ouvrez une Pull Request.
+
+---
+
+## 📧 **Contact**
+
+Pour toute question ou suggestion, vous pouvez me contacter à :  
+📩 **votre-email@example.com**
+
+---
+
+## 📝 **Licence**
+
+Ce projet est sous licence MIT. Voir le fichier [LICENSE](LICENSE) pour plus d'informations.
