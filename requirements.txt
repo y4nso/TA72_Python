@@ -1,0 +1,5 @@
+flask
+chatterbot==1.0.4
+nltk
+sentence-transformers
+torch
