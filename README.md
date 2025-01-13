@@ -150,15 +150,3 @@ Vous souhaitez contribuer ? Voici comment vous pouvez aider :
 Ce projet est sous licence MIT. Voir le fichier [LICENSE](LICENSE) pour plus d'informations.
 ```
 
----
-
-### **Requirements.txt**
-
-```plaintext
-flask
-chatterbot==1.0.4
-nltk
-sentence-transformers
-torch
-```
-
